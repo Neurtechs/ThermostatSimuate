@@ -118,7 +118,7 @@ namespace ThermostatSimuate
             ResetData();
             SetChart();
 
-            LoadGrid();
+           
 
             for (int i = 20; i > 0; i--)
             {
@@ -135,15 +135,15 @@ namespace ThermostatSimuate
                 baseHeating[i] = (60 * 10) * myRand;
                 timeCooling[i] = Math.Round(baseCooling[i] * (0.5 + rand.NextDouble()),0);
                 timeHeating[i] = Math.Round(baseHeating[i] * (0.5 + rand.NextDouble()),0);
-                gradCooling[i] = -5 / timeCooling[i];
-                gradHeating[i] = 5 / timeHeating[i];
+                gradCooling[i] =( -5 / timeCooling[i]);
+                gradHeating[i] = (5 / timeHeating[i]);
                 forceOnOf[i] = 3;
                 HWIndex[i] = 100;
                 myRand = rand.NextDouble();
                 skipFirstCalc[i] = true;
                 on_off[i] = Convert.ToInt16(myRand);
                 sw_on_off[i] = 1;
-                index[i] = 95 + 5 * rand.NextDouble();
+                index[i] = Math.Round(95 + 5 * rand.NextDouble(),3);
                 listBoxControl1.Items.Add("Node " + gNode[i] + " Cooling time = " + Math.Round (timeCooling[i]/60,1) + ", Heating time = " +
                     Math.Round(timeHeating[i]/60,1) + " minutes");
                
@@ -152,15 +152,19 @@ namespace ThermostatSimuate
                 dt.Rows[i-1]["Heating"] = timeHeating[i];
                 dt.Rows[i-1]["ThermoStatus"] = on_off[i];
                 dt.Rows[i-1]["NodeStatus"] = 1;
-                dt.Rows[i-1]["GradCooling"] = gradCooling[i];
-                dt.Rows[i-1]["GradHeating"] = gradHeating[i];
+                dt.Rows[i-1]["GradCooling"] = Math.Round(gradCooling[i],3);
+                dt.Rows[i-1]["GradHeating"] = Math.Round(gradHeating[i],3);
                 dt.Rows[i-1]["HWIndex"] = index[i];
+
 
             }
 
             //on_off[5] = 0;
             //dt.Rows[4]["ThermoStatus"] = 0;
+            LoadGrid();
             gridView1.Columns["Node"].SortOrder = DevExpress.Data.ColumnSortOrder.Descending;
+            gridView1.Columns["HWIndex"].DisplayFormat.FormatType = FormatType.Numeric;
+            gridView1.Columns["HWIndex"].DisplayFormat.FormatString = "c2";
         }
         private void SetChart()
         {
@@ -196,12 +200,13 @@ namespace ThermostatSimuate
             dt.Columns.Add("GradCooling");
             dt.Columns.Add("GradHeating");
             dt.Columns.Add("HWIndex");
+            
         }
         private void LoadGrid()
         {
            
-          
             gridControl1.DataSource = dt;
+            
             gridView1.Columns[1].DisplayFormat.FormatType = FormatType.Numeric;
             gridView1.Columns[2].DisplayFormat.FormatType = FormatType.Numeric;
             gridView1.Columns[3].DisplayFormat.FormatType = FormatType.Numeric;
@@ -215,7 +220,8 @@ namespace ThermostatSimuate
             gridView1.Columns[4].DisplayFormat.FormatString = "n2";
             gridView1.Columns[5].DisplayFormat.FormatString = "n2";
             gridView1.Columns[6].DisplayFormat.FormatString = "n2";
-            gridView1.Columns[7].DisplayFormat.FormatString = "n2";
+            gridView1.Columns[7].DisplayFormat.FormatString = "{0:n3}";
+            
             
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -261,9 +267,8 @@ namespace ThermostatSimuate
                     TimeSpan duration = (myTime - timeStartHeating[j]);
                     double dur = Convert.ToInt32(duration.TotalSeconds);
                     dt.Rows[j - 1]["Heating"] = dur;                    
-                    HWIndex[j] = index[j] + gradHeating[j] * (
-                       dur);
-                    dt.Rows[j - 1]["HWIndex"] = HWIndex[j];
+                    HWIndex[j] = index[j] + gradHeating[j] * (dur);
+                    dt.Rows[j - 1]["HWIndex"] = Math.Round(HWIndex[j],3);
                     dt.Rows[j - 1]["Cooling"] = 0;
                     //If switch changes, recalculate
                     //if (timeHeating[j] - dur <= 0)
@@ -275,10 +280,10 @@ namespace ThermostatSimuate
                         dt.Rows[j - 1]["ThermoStatus"] = 0;
                         //HWIndex[j] = 100;
                         
-                        dt.Rows[j - 1]["HWIndex"] = HWIndex[j];
+                        dt.Rows[j - 1]["HWIndex"] = Math.Round(HWIndex[j],3);
                         //Recalculate final heating gradient.
                         gradHeating[j] = (thermoEnd-thermoStart) / dur;
-                        dt.Rows[j - 1]["GradHeating"] = gradHeating[j];
+                        dt.Rows[j - 1]["GradHeating"] = Math.Round(gradHeating[j],4);
                         dt.Rows[j - 1]["Heating"] = 0;
 
                         //Values for the following cooling cycle
@@ -287,7 +292,7 @@ namespace ThermostatSimuate
                         timeCooling[j] = Math.Round(baseCooling[j] * (0.8 + 0.4 * rand.NextDouble()), 0);
                         dt.Rows[j - 1]["Cooling"] = timeCooling[j];
                         gradCooling[j] = (thermoStart-thermoEnd) / timeCooling[j];
-                        dt.Rows[j - 1]["GradCooling"] = gradCooling[j];
+                        dt.Rows[j - 1]["GradCooling"] = Math.Round(gradCooling[j],4);
 
                         if (j == 5)
                         {
@@ -307,7 +312,7 @@ namespace ThermostatSimuate
                     dt.Rows[j - 1]["Cooling"] = dur;
                     HWIndex[j] = index[j] + gradCooling[j] * (
                        dur);
-                    dt.Rows[j - 1]["HWIndex"] = HWIndex[j];
+                    dt.Rows[j - 1]["HWIndex"] = Math.Round(HWIndex[j],3);
                     dt.Rows[j - 1]["Heating"] = 0;
                     if (HWIndex[j] <= thermoStart )
                     {
@@ -316,13 +321,13 @@ namespace ThermostatSimuate
                         on_off[j] = 1;
                         dt.Rows[j - 1]["ThermoStatus"] = 1;
                         //HWIndex[j] = 95;
-                        dt.Rows[j - 1]["HWIndex"] = HWIndex[j];
+                        dt.Rows[j - 1]["HWIndex"] = Math.Round(HWIndex[j],3);
 
                         //Recalculate final cooling gradient.
                         if (dur > 0)
                         {
                             gradCooling[j] = (thermoStart-thermoEnd) / dur;
-                            dt.Rows[j - 1]["GradCooling"] = gradCooling[j];
+                            dt.Rows[j - 1]["GradCooling"] = Math.Round(gradCooling[j],4);
                         }
                        
                         dt.Rows[j - 1]["Cooling"] = 0;
@@ -333,7 +338,7 @@ namespace ThermostatSimuate
                         timeHeating[j] = Math.Round(baseHeating[j] * (0.8 + 0.4 * rand.NextDouble()), 0);
                         dt.Rows[j - 1]["Heating"] = timeHeating[j];
                         gradHeating[j] = (thermoEnd-thermoStart) / timeHeating[j];
-                        dt.Rows[j - 1]["GradHeating"] = gradHeating[j];
+                        dt.Rows[j - 1]["GradHeating"] = Math.Round(gradHeating[j],4);
 
                         if (j == 5)
                         {
@@ -361,7 +366,7 @@ namespace ThermostatSimuate
                         dt.Rows[j - 1]["Cooling"] = dur;
                         HWIndex[j] = index[j] + gradCooling[j] * (
                             dur);
-                        dt.Rows[j - 1]["HWIndex"] = HWIndex[j];
+                        dt.Rows[j - 1]["HWIndex"] = Math.Round(HWIndex[j],3);
                         dt.Rows[j - 1]["Heating"] = 0;
                         if (HWIndex[j] <= thermoStart)
                         {
@@ -372,7 +377,7 @@ namespace ThermostatSimuate
                             dt.Rows[j - 1]["NodeStatus"] = 0;
                             //Recalculate gradient
                             gradCooling[j] = (thermoStart - thermoEnd) / dur;
-                            dt.Rows[j - 1]["GradCooling"] = gradCooling[j];
+                            dt.Rows[j - 1]["GradCooling"] = Math.Round(gradCooling[j],4);
                             //[j] = HWIndex[j];
                             index[j] = HWIndex[j];
                             timeStartCooling[j] = myTime;
@@ -397,7 +402,7 @@ namespace ThermostatSimuate
                             dt.Rows[j - 1]["Heating"] = dur;
                             HWIndex[j] = index[j] + gradHeating[j] * (
                                 dur);
-                            dt.Rows[j - 1]["HWIndex"] = HWIndex[j];
+                            dt.Rows[j - 1]["HWIndex"] = Math.Round(HWIndex[j],3);
                             dt.Rows[j - 1]["Cooling"] = 0;
 
                             if (HWIndex[j] >= hMax)
@@ -435,7 +440,7 @@ namespace ThermostatSimuate
                             dt.Rows[j - 1]["Cooling"] = dur;
                             HWIndex[j] = index[j] + gradCooling[j] * (
                                 dur);
-                            dt.Rows[j - 1]["HWIndex"] = HWIndex[j];
+                            dt.Rows[j - 1]["HWIndex"] = Math.Round(HWIndex[j],3);
                             dt.Rows[j - 1]["Heating"] = 0;
                             if(HWIndex[j] <= hMin)
                             {
@@ -614,6 +619,7 @@ namespace ThermostatSimuate
                 timeStartHeating[i] = myTime;
                 seriesC[i].Points.Clear();
             }
+            
             chkChanged = false;
             timer1.Start();
         }

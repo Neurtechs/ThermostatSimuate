@@ -29,58 +29,58 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraCharts.XYDiagram xyDiagram3 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series26 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView21 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series27 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView22 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series28 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView23 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series29 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView24 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series30 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView25 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series31 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView26 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series32 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView27 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series33 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView28 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series34 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView29 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series35 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView30 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series36 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView31 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series37 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView32 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series38 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView33 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series39 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView34 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series40 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView35 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series41 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView36 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series42 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView37 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series43 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView38 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series44 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView39 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.Series series45 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PointSeriesView pointSeriesView40 = new DevExpress.XtraCharts.PointSeriesView();
-            DevExpress.XtraCharts.XYDiagram xyDiagram4 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series46 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView6 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series47 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView7 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series48 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView8 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series49 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView9 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series50 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView10 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView1 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView2 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView3 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView4 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView5 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series6 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView6 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series7 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView7 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series8 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView8 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series9 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView9 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series10 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView10 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series11 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView11 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series12 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView12 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series13 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView13 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series14 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView14 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series15 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView15 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series16 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView16 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series17 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView17 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series18 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView18 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series19 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView19 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.Series series20 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PointSeriesView pointSeriesView20 = new DevExpress.XtraCharts.PointSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series21 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView1 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series22 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView2 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series23 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView3 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series24 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView4 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series25 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView5 = new DevExpress.XtraCharts.LineSeriesView();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -115,47 +115,47 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HIMax.Properties)).BeginInit();
@@ -163,17 +163,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.end.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.start.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series46)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series48)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series49)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series50)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView5)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -289,94 +289,94 @@
             // 
             // chartControl2
             // 
-            xyDiagram3.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram3.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl2.Diagram = xyDiagram3;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl2.Diagram = xyDiagram1;
             this.chartControl2.Legend.Name = "Default Legend";
             this.chartControl2.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chartControl2.Location = new System.Drawing.Point(1843, 358);
             this.chartControl2.Name = "chartControl2";
-            series26.Name = "1";
-            pointSeriesView21.PointMarkerOptions.Size = 10;
-            series26.View = pointSeriesView21;
-            series27.Name = "2";
-            pointSeriesView22.PointMarkerOptions.Size = 10;
-            series27.View = pointSeriesView22;
-            series28.Name = "3";
-            pointSeriesView23.PointMarkerOptions.Size = 10;
-            series28.View = pointSeriesView23;
-            series29.Name = "4";
-            pointSeriesView24.PointMarkerOptions.Size = 10;
-            series29.View = pointSeriesView24;
-            series30.Name = "5";
-            pointSeriesView25.PointMarkerOptions.Size = 10;
-            series30.View = pointSeriesView25;
-            series31.Name = "6";
-            pointSeriesView26.PointMarkerOptions.Size = 10;
-            series31.View = pointSeriesView26;
-            series32.Name = "7";
-            pointSeriesView27.PointMarkerOptions.Size = 10;
-            series32.View = pointSeriesView27;
-            series33.Name = "8";
-            pointSeriesView28.PointMarkerOptions.Size = 10;
-            series33.View = pointSeriesView28;
-            series34.Name = "9";
-            pointSeriesView29.PointMarkerOptions.Size = 10;
-            series34.View = pointSeriesView29;
-            series35.Name = "10";
-            pointSeriesView30.PointMarkerOptions.Size = 10;
-            series35.View = pointSeriesView30;
-            series36.Name = "11";
-            pointSeriesView31.PointMarkerOptions.Size = 10;
-            series36.View = pointSeriesView31;
-            series37.Name = "12";
-            pointSeriesView32.PointMarkerOptions.Size = 10;
-            series37.View = pointSeriesView32;
-            series38.Name = "13";
-            pointSeriesView33.PointMarkerOptions.Size = 10;
-            series38.View = pointSeriesView33;
-            series39.Name = "14";
-            pointSeriesView34.PointMarkerOptions.Size = 10;
-            series39.View = pointSeriesView34;
-            series40.Name = "15";
-            pointSeriesView35.PointMarkerOptions.Size = 10;
-            series40.View = pointSeriesView35;
-            series41.Name = "16";
-            pointSeriesView36.PointMarkerOptions.Size = 10;
-            series41.View = pointSeriesView36;
-            series42.Name = "17";
-            pointSeriesView37.PointMarkerOptions.Size = 10;
-            series42.View = pointSeriesView37;
-            series43.Name = "18";
-            pointSeriesView38.PointMarkerOptions.Size = 10;
-            series43.View = pointSeriesView38;
-            series44.Name = "19";
-            pointSeriesView39.PointMarkerOptions.Size = 10;
-            series44.View = pointSeriesView39;
-            series45.Name = "20";
-            pointSeriesView40.PointMarkerOptions.Size = 10;
-            series45.View = pointSeriesView40;
+            series1.Name = "1";
+            pointSeriesView1.PointMarkerOptions.Size = 10;
+            series1.View = pointSeriesView1;
+            series2.Name = "2";
+            pointSeriesView2.PointMarkerOptions.Size = 10;
+            series2.View = pointSeriesView2;
+            series3.Name = "3";
+            pointSeriesView3.PointMarkerOptions.Size = 10;
+            series3.View = pointSeriesView3;
+            series4.Name = "4";
+            pointSeriesView4.PointMarkerOptions.Size = 10;
+            series4.View = pointSeriesView4;
+            series5.Name = "5";
+            pointSeriesView5.PointMarkerOptions.Size = 10;
+            series5.View = pointSeriesView5;
+            series6.Name = "6";
+            pointSeriesView6.PointMarkerOptions.Size = 10;
+            series6.View = pointSeriesView6;
+            series7.Name = "7";
+            pointSeriesView7.PointMarkerOptions.Size = 10;
+            series7.View = pointSeriesView7;
+            series8.Name = "8";
+            pointSeriesView8.PointMarkerOptions.Size = 10;
+            series8.View = pointSeriesView8;
+            series9.Name = "9";
+            pointSeriesView9.PointMarkerOptions.Size = 10;
+            series9.View = pointSeriesView9;
+            series10.Name = "10";
+            pointSeriesView10.PointMarkerOptions.Size = 10;
+            series10.View = pointSeriesView10;
+            series11.Name = "11";
+            pointSeriesView11.PointMarkerOptions.Size = 10;
+            series11.View = pointSeriesView11;
+            series12.Name = "12";
+            pointSeriesView12.PointMarkerOptions.Size = 10;
+            series12.View = pointSeriesView12;
+            series13.Name = "13";
+            pointSeriesView13.PointMarkerOptions.Size = 10;
+            series13.View = pointSeriesView13;
+            series14.Name = "14";
+            pointSeriesView14.PointMarkerOptions.Size = 10;
+            series14.View = pointSeriesView14;
+            series15.Name = "15";
+            pointSeriesView15.PointMarkerOptions.Size = 10;
+            series15.View = pointSeriesView15;
+            series16.Name = "16";
+            pointSeriesView16.PointMarkerOptions.Size = 10;
+            series16.View = pointSeriesView16;
+            series17.Name = "17";
+            pointSeriesView17.PointMarkerOptions.Size = 10;
+            series17.View = pointSeriesView17;
+            series18.Name = "18";
+            pointSeriesView18.PointMarkerOptions.Size = 10;
+            series18.View = pointSeriesView18;
+            series19.Name = "19";
+            pointSeriesView19.PointMarkerOptions.Size = 10;
+            series19.View = pointSeriesView19;
+            series20.Name = "20";
+            pointSeriesView20.PointMarkerOptions.Size = 10;
+            series20.View = pointSeriesView20;
             this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series26,
-        series27,
-        series28,
-        series29,
-        series30,
-        series31,
-        series32,
-        series33,
-        series34,
-        series35,
-        series36,
-        series37,
-        series38,
-        series39,
-        series40,
-        series41,
-        series42,
-        series43,
-        series44,
-        series45};
+        series1,
+        series2,
+        series3,
+        series4,
+        series5,
+        series6,
+        series7,
+        series8,
+        series9,
+        series10,
+        series11,
+        series12,
+        series13,
+        series14,
+        series15,
+        series16,
+        series17,
+        series18,
+        series19,
+        series20};
             this.chartControl2.Size = new System.Drawing.Size(1187, 1029);
             this.chartControl2.TabIndex = 37;
             // 
@@ -546,36 +546,36 @@
             // 
             // chartControl1
             // 
-            xyDiagram4.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram4.AxisY.VisibleInPanesSerializable = "-1";
-            xyDiagram4.AxisY.VisualRange.Auto = false;
-            xyDiagram4.AxisY.VisualRange.MaxValueSerializable = "100";
-            xyDiagram4.AxisY.VisualRange.MinValueSerializable = "80";
-            xyDiagram4.AxisY.WholeRange.Auto = false;
-            xyDiagram4.AxisY.WholeRange.MaxValueSerializable = "100";
-            xyDiagram4.AxisY.WholeRange.MinValueSerializable = "80";
-            this.chartControl1.Diagram = xyDiagram4;
+            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
+            xyDiagram2.AxisY.VisualRange.Auto = false;
+            xyDiagram2.AxisY.VisualRange.MaxValueSerializable = "100";
+            xyDiagram2.AxisY.VisualRange.MinValueSerializable = "80";
+            xyDiagram2.AxisY.WholeRange.Auto = false;
+            xyDiagram2.AxisY.WholeRange.MaxValueSerializable = "100";
+            xyDiagram2.AxisY.WholeRange.MinValueSerializable = "80";
+            this.chartControl1.Diagram = xyDiagram2;
             this.chartControl1.Legend.Name = "Default Legend";
             this.chartControl1.Location = new System.Drawing.Point(1828, 9);
             this.chartControl1.Margin = new System.Windows.Forms.Padding(6);
             this.chartControl1.Name = "chartControl1";
-            series46.Name = "DEHW 1";
-            series46.NumericSummaryOptions.MeasureUnit = 0.1D;
-            series46.View = lineSeriesView6;
-            series47.Name = "DEHW 5";
-            series47.View = lineSeriesView7;
-            series48.Name = "DEHW 10";
-            series48.View = lineSeriesView8;
-            series49.Name = "DEHW 15";
-            series49.View = lineSeriesView9;
-            series50.Name = "DEHW 20";
-            series50.View = lineSeriesView10;
+            series21.Name = "DEHW 1";
+            series21.NumericSummaryOptions.MeasureUnit = 0.1D;
+            series21.View = lineSeriesView1;
+            series22.Name = "DEHW 5";
+            series22.View = lineSeriesView2;
+            series23.Name = "DEHW 10";
+            series23.View = lineSeriesView3;
+            series24.Name = "DEHW 15";
+            series24.View = lineSeriesView4;
+            series25.Name = "DEHW 20";
+            series25.View = lineSeriesView5;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series46,
-        series47,
-        series48,
-        series49,
-        series50};
+        series21,
+        series22,
+        series23,
+        series24,
+        series25};
             this.chartControl1.Size = new System.Drawing.Size(1447, 338);
             this.chartControl1.TabIndex = 48;
             // 
@@ -609,47 +609,47 @@
             ((System.ComponentModel.ISupportInitialize)(this.listBoxControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pointSeriesView40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pointSeriesView20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
@@ -658,17 +658,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.HIMin.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.end.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.start.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series46)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series48)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series49)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
