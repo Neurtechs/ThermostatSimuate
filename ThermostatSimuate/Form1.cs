@@ -31,11 +31,15 @@ namespace ThermostatSimuate
         private DateTime[] timeStartHeating;
         private double[] gradHeating;
         private double[] gradCooling;
+        private double[] energyShift;
+       
         private double[] HWIndex; //current HW index
         private double[] index;  //c in y=mx+c
+       
         private int[] on_off;
         private int[] sw_on_off;
-        
+        private double[] power; //geyser element
+        private double[] energy;
         private int i;
         private DateTime myBaseTime;
         private DateTime prevTime;
@@ -44,6 +48,7 @@ namespace ThermostatSimuate
         private double[] baseCooling; //50 minutes
         private double[] baseHeating;  //10 minutes
         private Random rand;
+        private Random rand2;
         private Series[] seriesC;
         private Series series1;
         private Series series2;
@@ -80,11 +85,14 @@ namespace ThermostatSimuate
             gNode = new string[21];
             timeCooling = new double[21];
             timeHeating = new double[21];
+            energyShift = new double[21];
+           
             timeStartCooling = new DateTime[21];
             timeStartHeating = new DateTime[21];
             gradCooling = new double[21];
             gradHeating = new double[21];
-            HWIndex = new double[21];
+            HWIndex = new double[21]; 
+            
             on_off = new int[21];
             sw_on_off = new int[21];
             index = new double[21];
@@ -93,6 +101,10 @@ namespace ThermostatSimuate
             yValues = new List<double>();
             baseCooling = new double[21];
             baseHeating = new double[21];
+            power = new double[21];
+            energy = new double[21];
+            rand2=new Random();
+
             forceOnOf= new int[21]; //0=off, 1=on, 3=inactive
             
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
@@ -131,6 +143,10 @@ namespace ThermostatSimuate
                 if(myNode.Length == 1) { myNode = "0" + myNode; }
                 gNode[i]=myNode;
                 Double myRand = 0.8 + 0.5 * rand.NextDouble();
+                double myRand2 = rand2.NextDouble() * 8;
+                myRand2 = myRand2 / 2;
+                power[i] = Math.Round(myRand2 / 0.5) * 0.5;
+                if (power[i] <1) { power[i] = 1;}
                 baseCooling[i] = (60 * 50) * myRand;
                 baseHeating[i] = (60 * 10) * myRand;
                 timeCooling[i] = Math.Round(baseCooling[i] * (0.5 + rand.NextDouble()),0);
@@ -139,6 +155,9 @@ namespace ThermostatSimuate
                 gradHeating[i] = (5 / timeHeating[i]);
                 forceOnOf[i] = 3;
                 HWIndex[i] = 100;
+                energyShift[i] = 0;
+               
+               
                 myRand = rand.NextDouble();
                 skipFirstCalc[i] = true;
                 on_off[i] = Convert.ToInt16(myRand);
@@ -155,7 +174,8 @@ namespace ThermostatSimuate
                 dt.Rows[i-1]["GradCooling"] = Math.Round(gradCooling[i],3);
                 dt.Rows[i-1]["GradHeating"] = Math.Round(gradHeating[i],3);
                 dt.Rows[i-1]["HWIndex"] = index[i];
-
+                dt.Rows[i - 1]["Power"] = power[i];
+                dt.Rows[i - 1]["EnergyShift"] = energyShift[i];
 
             }
 
@@ -200,7 +220,10 @@ namespace ThermostatSimuate
             dt.Columns.Add("GradCooling");
             dt.Columns.Add("GradHeating");
             dt.Columns.Add("HWIndex");
-            
+            dt.Columns.Add("Power");
+            dt.Columns.Add("Energy");
+            dt.Columns.Add("EnergyShift");
+           
         }
         private void LoadGrid()
         {
@@ -266,6 +289,9 @@ namespace ThermostatSimuate
                     //Busy warming (Node on/Thermostat on)
                     TimeSpan duration = (myTime - timeStartHeating[j]);
                     double dur = Convert.ToInt32(duration.TotalSeconds);
+                   
+                    energy[j] = energy[j] + power[j] / 3600;
+                    dt.Rows[j - 1]["Energy"] = Math.Round(energy[j],2);
                     dt.Rows[j - 1]["Heating"] = dur;                    
                     HWIndex[j] = index[j] + gradHeating[j] * (dur);
                     dt.Rows[j - 1]["HWIndex"] = Math.Round(HWIndex[j],3);
@@ -404,7 +430,8 @@ namespace ThermostatSimuate
                                 dur);
                             dt.Rows[j - 1]["HWIndex"] = Math.Round(HWIndex[j],3);
                             dt.Rows[j - 1]["Cooling"] = 0;
-
+                            energy[j] = energy[j] + power[j] / 3600;
+                            dt.Rows[j - 1]["Energy"] = Math.Round(energy[j], 2);
                             if (HWIndex[j] >= hMax)
                             {
 
@@ -490,6 +517,24 @@ namespace ThermostatSimuate
                             //    }
                             //}
                         }
+                    }
+                }
+            }
+
+            //Compute load shifting
+      
+            for (int j = 20; j > 0; j--)
+            {
+                if (HWIndex[j] < thermoStart)
+                {
+                    if (sw_on_off[j] == 0) //cooling
+                    {
+                       
+                    }
+                    else //heating
+                    {
+                        energyShift[j] = energyShift[j] + power[j] / 3600;
+                        dt.Rows[j - 1]["EnergyShift"] = Math.Round(energyShift[j], 2);
                     }
                 }
             }
